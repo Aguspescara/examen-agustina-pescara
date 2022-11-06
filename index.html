@@ -1,0 +1,305 @@
+<!--Define la version del lenguaje que usamos-->
+<!DOCTYPE html>
+
+<!--todo el contenido es de html-->
+<html lang="en">
+
+<head><!--guarda toda la informacion del documento (logo,barra de navegacion,encabezado)-->
+
+<!-- define que el documento debe soportar todo tipo de caracteres-->
+  <meta charset="UTF-8">
+
+  <!-- displays site properly based on user's device --> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <meta name="description" content="Examen Final para la materia de optativas">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+ 
+  <!--nos permite trabajar en la hoja de estilo en cascada-->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!--titulo-->
+  <title>Examen Final Optativas</title>
+
+</head> <!--cierre del head-->
+
+<body> <!--contiene todas las demas etiquetas que van a generar el contenido de la pag-->
+
+  <!-- Aqui comienza el encabezado -->
+  <section class="header">
+
+    <!--define una division del contenido de una página web-->
+    <div class="navigation">
+      
+      <a href="#"><img src="images/logo.svg" alt="Logo del sitio"></a>
+      <ul class="site-nav">
+
+        <li><a href="#">Product</a><img src="images/icon-arrow-light.svg" alt="flecha producto">
+          <div class="dropdown-menu">
+
+            <!--lista desordenada-->
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Marketplace</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+        </li>        
+
+        <li><a href="#">Company</a><img src="images/icon-arrow-light.svg" alt="flecha compania">
+         <!--define una division del contenido de una página web-->
+          <div class="dropdown-menu">
+            <!-- lista desordenada-->
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li><a href="#">Connect</a><img src="images/icon-arrow-light.svg" alt="flecha conectar">
+
+        <!--define una division del contenido de una página web-->
+          <div class="dropdown-menu">
+
+            <!--lista desordenada-->
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsletter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+            </ul>
+          </div>
+        </li>
+
+      </ul>
+      <ul class="register">
+        <li><a href="#" class="login">Login</a></li>
+        <li><a href="#" class="signup">Sign Up</a></li>
+      </ul>
+      <img src="images/icon-hamburger.svg" alt="hamburger" id="mobilemenu">
+    </div>
+     
+    <!--define las divisiones lógicas existentes en el contenido-->  
+    <div class="header-content">
+
+      <!-- tiulo se la pagina-->
+      <h1>A modern publishing platform</h1>
+
+      <!--etiqueta de texto-->
+      <p>Grow your audience and build your online brand</p>
+
+      <!--lista desordenada -->
+     <ul class="header-content-links">
+
+       <!--declara cada uno de los elementos de una lista--->
+        <li><a href="#" class="start">Start for free</a></li>
+        <li><a href="#" class="learn">Learn More</a></li>
+      </ul>
+    </div>
+  </section>
+
+       <!-- La navegación móvil comienza aquí -->
+  
+  <div id="mobilenav" class="mobilenav">
+    <ul>
+      <!--declara cada uno de los elementos de una lista--->
+      <li class="connect">
+       
+        <!--define una division del contenido de una página web-->
+        <div class="connect-text">
+          <a href="#">Product</a>
+          <img src="images/icon-arrow-dark.svg" alt="flecha producto">
+        </div>
+        <div class="dropdown-menu-mobile">
+
+          <!--lista desordena-->
+          <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </div>
+      </li>
+        <!--declara cada uno de los elementos de una lista--->
+      <li class="connect">
+
+        <!--define una division del contenido de una página web-->
+        <div class="connect-text">
+          <a href="#">Company</a>
+          <img src="images/icon-arrow-dark.svg" alt="flecha compañia">
+        </div>
+        <div class="dropdown-menu-mobile">
+
+          <!--lista desordenada-->
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+      </li>
+     <!--declara cada uno de los elementos de una lista--->
+      <li class="connect">
+
+    <!--define una division del contenido de una página web-->
+        <div class="connect-text">
+          <a href="#">Connect</a>
+          <img src="images/icon-arrow-dark.svg" alt="flecha conectar">
+        </div>
+
+        <!--define una division del contenido de una página web-->
+        <div class="dropdown-menu-mobile">
+
+          <!--lista desordenada-->
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </li>
+          <!--declara cada uno de los elementos de una lista--->
+      <li><a href="#">Login</a></li>
+      <li class="signup"><a href="#">Sign Up</a></li>
+    </ul>
+  </div>
+
+  <!-- Descripción de Blog -->
+  <section class="description">
+
+    <!--etiqueta de texto-->
+    <h2>Designed for the future</h2>
+    
+    <!--define una division del contenido de una página web-->
+    <div class="description-content">
+      <div class="description-content-leftcolumn">
+
+        <!-- etiqueta de texto-->
+        <h3>Introducing an extensible editor</h3>
+
+        <!-- etiqueta de texto-->
+        <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+          videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+          change the looks of a blog
+        </p>
+        <!-- etiqueta de texto-->
+        <h3>Robust content management</h3>
+
+        <!-- etiqueta de texto-->
+        <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+          by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+        </p>
+      </div>
+      <!--define una division del contenido de una página web-->
+      <div class="description-content-rightcolumn">
+        <img src="images/illustration-editor-desktop.svg" alt="editor illustration" class="desktop-editor">
+        <img src="images/illustration-editor-mobile.svg" alt="editor illustration" class="mobile-editor">
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="services">
+    <!--define una division del contenido de una página web-->
+    <div class="services-leftcolumn">
+      <img src="images/illustration-phones.svg" alt="phone illustration" class="phone">
+      <img src="images/bg-pattern-circles.svg" alt="circle pattern" class="circle-pattern">
+    </div>
+    <div class="services-rightcolumn">
+
+      <!-- etiqueta de texto-->
+      <h4>State of the Art Infrastructure</h4>
+
+      <!-- etiqueta de texto-->
+      <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+      </p>
+    </div>
+  </section>
+
+  <!-- Características -->
+  <section class="features">
+     <!--define una division del contenido de una página web-->
+    <div class="features-leftcolumn">
+      <img src="images/illustration-laptop-desktop.svg" alt="laptop illustration" class="desktop-illustration">
+      <img src="images/illustration-laptop-mobile.svg" alt="laptop illustration" class="mobile-illustration">
+    </div>
+     <!--define una division del contenido de una página web-->
+    <div class="features-rightcolumn">
+
+      <!--etiqueta de texto-->
+      <h5>Free, open, simple</h5>
+      <!--etiqueta de texto-->
+      <p>Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+        features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+      </p>
+      <!--etiqueta de texto-->
+      <h5>Powerful tooling</h5>
+      <!--etiqueta de texto-->
+      <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+        capable of producing even the most complicated sites.
+      </p>
+    </div>
+  </section>
+
+  <!-- pie de pagina -->
+  <footer>
+    <!--define una division del contenido de una página web-->
+    <div class="footer-box">
+      <a href="#"><img src="images/logo.svg" alt="Blogr logo"></a>
+    </div>
+    <!--define una division del contenido de una página web-->
+    <div class="footer-box">
+      <!--etiqueta de texto-->
+      <h6>Product</h6>
+<!-- lista desordenada-->
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Integrations</a></li>
+      </ul>
+    </div>
+    <!--define una division del contenido de una página web-->
+    <div class="footer-box">
+
+      <!--etiqueta de texto-->
+      <h6>Company</h6>
+
+      
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h6>Connect</h6>
+      <ul>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Newsletter</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+
+    <div class="attribution">
+      Examen hecho por Agustina Pescara</a>. 
+    </div>
+  </footer>
+
+  
+</body>
+</html>
